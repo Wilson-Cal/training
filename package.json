@@ -1,0 +1,15 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "Training Libraries",
+  "main": "cities.js",
+  "dependencies": {
+    "d3-dsv": "^1.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cal Wilson",
+  "license": "MIT"
+}
