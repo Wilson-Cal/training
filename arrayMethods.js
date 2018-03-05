@@ -14,8 +14,8 @@ function addCourse(courseNames, courseCodes) {
     var courseData = [];
     for (var i = 0; i < courseNames.length; i++) {
         var course = {
-            "Course Name": courseNames[i],
-            "Course Code": courseCodes[i]
+            'Course Name': courseNames[i],
+            'Course Code': courseCodes[i]
         };
         courseData.push(course);
     }
@@ -173,7 +173,7 @@ function checkEmployee(condition, employees) {
     var check = true;
     for (var i = 0; i < employees.length; i++) {
         check = employees.every(function (value) {
-            return value[condition] != undefined && value[condition] != "";
+            return value[condition] != undefined && value[condition] != '';
         });
     }
     return check;
@@ -229,7 +229,7 @@ function checkCandidates(candidates) {
 
 function convertGrades(grades) {
     return grades.map(function (value) {
-        return value = value + "%";
+        return value = value + '%';
     });
 }
 
@@ -302,96 +302,96 @@ function getReversedArray(data) {
 }
 
 function main() {
-    console.log("Push Example");
-    console.log(addCourse(["Intro to English", "Into to History", "Advanced Programming", "History in the Modern World", "Genetics"], ["ENG 101", "HIST 101", "CS 301", "HIST 205", "SCI 225"]));
-    console.log("\nPop Example");
-    console.log(undo(["I did not accidently delete this.", "I accidently deleted this."]));
-    console.log("\nShift Example");
-    console.log(shortenLine(["Bob", "Sue", "Billy", "Joe"]));
-    console.log("\nUnshift Example");
-    console.log(addAnnouncement(true, "Jesus Returns!", ["Horses Run Faster!", "Cookie Party Saturday!", "The Wheel is Reinvented!"]));
-    console.log("\nSort Example");
-    console.log(sortStudents1(["Zed", "Joe", "Allie", "Rey", "Mary", "Sue", "Luke"]));
+    console.log('Push Example');
+    console.log(addCourse(['Intro to English', 'Into to History', 'Advanced Programming', 'History in the Modern World', 'Genetics'], ['ENG 101', 'HIST 101', 'CS 301', 'HIST 205', 'SCI 225']));
+    console.log('\nPop Example');
+    console.log(undo(['I did not accidently delete this.', 'I accidently deleted this.']));
+    console.log('\nShift Example');
+    console.log(shortenLine(['Bob', 'Sue', 'Billy', 'Joe']));
+    console.log('\nUnshift Example');
+    console.log(addAnnouncement(true, 'Jesus Returns!', ['Horses Run Faster!', 'Cookie Party Saturday!', 'The Wheel is Reinvented!']));
+    console.log('\nSort Example');
+    console.log(sortStudents1(['Zed', 'Joe', 'Allie', 'Rey', 'Mary', 'Sue', 'Luke']));
     console.log(sortStudents2([300, 32, 54, 235, 5765, 1243, 1]));
-    console.log("\nConcat Example");
+    console.log('\nConcat Example');
     console.log(createMasterList([
-        ["Billy", "Sue", "Joe"],
-        ["Amy", "Sally", "Will"],
-        ["Bob", "Mary", "Rey"]
+        ['Billy', 'Sue', 'Joe'],
+        ['Amy', 'Sally', 'Will'],
+        ['Bob', 'Mary', 'Rey']
     ]));
-    console.log("\nForEach Example");
+    console.log('\nForEach Example');
     console.log(getTotalMoneyInBank([500.50, 29.56, 10034.34, 4045345.54, 125034.95]));
-    console.log("\nIncludes Example");
-    console.log(productSearch("Greek Yogurt", ["Bannanas", "Apples", "Milk", "Grapes", "Greek Yogurt"]));
-    console.log("\nEvery Example");
-    console.log(checkEmployee("phoneNumber", [{
-        "nameFirst": 'Joe',
-        "nameLast": 'Flannigan',
-        "phoneNumber": "256-658-3267"
+    console.log('\nIncludes Example');
+    console.log(productSearch('Greek Yogurt', ['Bannanas', 'Apples', 'Milk', 'Grapes', 'Greek Yogurt']));
+    console.log('\nEvery Example');
+    console.log(checkEmployee('phoneNumber', [{
+        'nameFirst': 'Joe',
+        'nameLast': 'Flannigan',
+        'phoneNumber': '256-658-3267'
     }, {
-        "nameFirst": 'Sally',
-        "nameLast": 'Flannigan',
-        "phoneNumber": "208-533-6545"
+        'nameFirst': 'Sally',
+        'nameLast': 'Flannigan',
+        'phoneNumber': '208-533-6545'
     }, {
-        "nameFirst": 'Bob',
-        "nameLast": 'Dole',
-        "phoneNumber": ''
+        'nameFirst': 'Bob',
+        'nameLast': 'Dole',
+        'phoneNumber': ''
     }]));
-    console.log("\nSome Example");
+    console.log('\nSome Example');
     console.log(checkComponents([{
-        "name": 'Battery',
-        "status": true
+        'name': 'Battery',
+        'status': true
     }, {
-        "name": 'CPU',
-        "status": true
+        'name': 'CPU',
+        'status': true
     }, {
-        "name": 'RAM',
-        "status": true
+        'name': 'RAM',
+        'status': true
     }, {
-        "name": 'Hard Disc',
-        "status": false
+        'name': 'Hard Disc',
+        'status': false
     }]));
-    console.log("\nFilter Example");
+    console.log('\nFilter Example');
     console.log(checkCandidates([{
-        "nameFirst": 'Joe',
-        "nameLast": 'Flannigan',
-        "phoneNumber": "256-658-3267",
-        "education": 2
+        'nameFirst': 'Joe',
+        'nameLast': 'Flannigan',
+        'phoneNumber': '256-658-3267',
+        'education': 2
     }, {
-        "nameFirst": 'Sally',
-        "nameLast": 'Flannigan',
-        "phoneNumber": "208-533-6545",
-        "education": 3
+        'nameFirst': 'Sally',
+        'nameLast': 'Flannigan',
+        'phoneNumber': '208-533-6545',
+        'education': 3
     }, {
-        "nameFirst": 'Bob',
-        "nameLast": 'Dole',
-        "phoneNumber": '',
-        "education": 1
+        'nameFirst': 'Bob',
+        'nameLast': 'Dole',
+        'phoneNumber': '',
+        'education': 1
     }]));
-    console.log("\nMap Example");
+    console.log('\nMap Example');
     console.log(convertGrades([96, 65, 76, 86, 100, 76, 38, 0, 56, 100, 45]));
-    console.log("\nReduce Example");
-    console.log(getAverageScore([96, 65, 76, 86, 100, 76, 38, 0, 56, 100, 45]).toFixed(2) + "%");
-    console.log("\nSplice Example");
-    console.log(addEmployee("Flabbio", ["Bob", "Sue", "Billy", "Joe"], 2));
-    console.log("\nSlice Example");
-    console.log(getDailySpecials(["Macaroni & Cheese", "Hamburger", "Hot Dog", "Chicken Noodle Soup", "Turkey Leg", "Pollo a la Brasa"], Math.floor((Math.random() * 6) + 0)));
-    console.log("\nReverse Example");
+    console.log('\nReduce Example');
+    console.log(getAverageScore([96, 65, 76, 86, 100, 76, 38, 0, 56, 100, 45]).toFixed(2) + '%');
+    console.log('\nSplice Example');
+    console.log(addEmployee('Flabbio', ['Bob', 'Sue', 'Billy', 'Joe'], 2));
+    console.log('\nSlice Example');
+    console.log(getDailySpecials(['Macaroni & Cheese', 'Hamburger', 'Hot Dog', 'Chicken Noodle Soup', 'Turkey Leg', 'Pollo a la Brasa'], Math.floor(Math.random() * 6 + 0)));
+    console.log('\nReverse Example');
     console.log(getReversedArray([{
-        "nameFirst": 'Joe',
-        "nameLast": 'Flannigan',
-        "phoneNumber": "256-658-3267",
-        "education": 2
+        'nameFirst': 'Joe',
+        'nameLast': 'Flannigan',
+        'phoneNumber': '256-658-3267',
+        'education': 2
     }, {
-        "nameFirst": 'Sally',
-        "nameLast": 'Flannigan',
-        "phoneNumber": "208-533-6545",
-        "education": 3
+        'nameFirst': 'Sally',
+        'nameLast': 'Flannigan',
+        'phoneNumber': '208-533-6545',
+        'education': 3
     }, {
-        "nameFirst": 'Bob',
-        "nameLast": 'Dole',
-        "phoneNumber": '',
-        "education": 1
+        'nameFirst': 'Bob',
+        'nameLast': 'Dole',
+        'phoneNumber': '',
+        'education': 1
     }]));
 }
 

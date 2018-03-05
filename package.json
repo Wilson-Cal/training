@@ -4,6 +4,7 @@
   "description": "Training Libraries",
   "main": "cities.js",
   "dependencies": {
+    "bl": "^1.2.1",
     "d3-dsv": "^1.0.8"
   },
   "devDependencies": {},
