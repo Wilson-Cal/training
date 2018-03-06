@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    height: 15vmin;
+    width: 15vmin;
+    background-color: white;
+    cursor: pointer;
+    margin: 5vmin;
+}
+
+html {
+    height: 100%;
+    background-color: cornsilk;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.blue {
+    background-color: #25599C;
+}
+
+.red {
+    background-color: #D82454;
+}
+
+.orange {
+    background-color: #EEA228;
+}
+
+.green {
+    background-color: #6CD223;
+}
+
+.explanation {
+    width: 100vmin;
+    border-bottom: 1px solid black;
+    margin: 5vmin auto;
+    margin-top: vh;
+    padding: 5vmin;
+    font-family: sans-serif;
+    font-size: 1.25em;
+}
